@@ -119,17 +119,20 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xtx3v"]
-radius = 11.0
+radius = 8.031546
 height = 32.0
 
 [node name="Player" type="CharacterBody2D"]
+collision_mask = 768
 script = ExtResource("1_xtx3v")
 speed = 6.5
-jump_power = 12.5
+jump_power = 10.5
 
 [node name="Camera2D" type="Camera2D" parent="."]
 offset = Vector2(0, -15)
 zoom = Vector2(4, 4)
+position_smoothing_enabled = true
+position_smoothing_speed = 8.0
 
 [node name="PlayerAnimator" type="Node2D" parent="." node_paths=PackedStringArray("player_controller")]
 script = ExtResource("2_dqmen")
