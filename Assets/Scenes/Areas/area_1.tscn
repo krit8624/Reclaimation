@@ -1,8 +1,9 @@
-[gd_scene load_steps=9 format=3 uid="uid://crtquv3vdvtqc"]
+[gd_scene load_steps=10 format=3 uid="uid://crtquv3vdvtqc"]
 
 [ext_resource type="Texture2D" uid="uid://cr5qfaa6q02th" path="res://Assets/Sprites/tiles_1.png" id="1_fpyp4"]
-[ext_resource type="PackedScene" uid="uid://c1r67ivc4bvxu" path="res://Assets/Scences/player.tscn" id="2_o7m1l"]
-[ext_resource type="PackedScene" uid="uid://dghav8sksla1s" path="res://Assets/Scences/mvoing_platform_large.tscn" id="3_kfxim"]
+[ext_resource type="PackedScene" uid="uid://c1r67ivc4bvxu" path="res://Assets/Scenes/player.tscn" id="2_o7m1l"]
+[ext_resource type="PackedScene" uid="uid://dghav8sksla1s" path="res://Assets/Scenes/moving_platform_large.tscn" id="3_kfxim"]
+[ext_resource type="PackedScene" path="res://Assets/Scenes/enemy.tscn" id="4_enm1"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_woxko"]
 texture = ExtResource("1_fpyp4")
@@ -356,3 +357,6 @@ path_time = 1.5
 position = Vector2(212, 11)
 curve = SubResource("Curve2D_c7ian")
 path_time = 15.0
+
+[node name="Enemy" parent="." instance=ExtResource("4_enm1")]
+position = Vector2(100, -7)

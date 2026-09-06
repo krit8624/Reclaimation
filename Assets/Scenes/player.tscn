@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://c1r67ivc4bvxu"]
+[gd_scene load_steps=18 format=3 uid="uid://c1r67ivc4bvxu"]
 
 [ext_resource type="Script" uid="uid://cag6s2qpf1loc" path="res://Assets/Scripts/player_controller.gd" id="1_xtx3v"]
 [ext_resource type="Script" uid="uid://efyvr3o8p5m7" path="res://Assets/Scripts/player_animator.gd" id="2_dqmen"]
@@ -35,10 +35,6 @@ region = Rect2(240, 0, 48, 48)
 [sub_resource type="AtlasTexture" id="AtlasTexture_2e3wt"]
 atlas = ExtResource("3_dqmen")
 region = Rect2(288, 0, 48, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_kavc6"]
-atlas = ExtResource("3_dqmen")
-region = Rect2(0, 96, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_g1qxy"]
 atlas = ExtResource("3_dqmen")
@@ -94,7 +90,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_kavc6")
+"texture": SubResource("AtlasTexture_66c7s")
 }],
 "loop": true,
 "name": &"jump",
